@@ -23,3 +23,9 @@
 | fc6         | FC: [512,4096] Relu Dropout:0.5 | [10 4096] | [10 4096] |
 | fc7         | FC: [10,4096] Relu Dropout:0.5 | [10 4096] | [10 4096] |
 | fc8         | FC: [10,4096] Relu Dropout:0.5 | [10 1000] | [10 1000] |
+
+1	data	Data		3	227x227	3	227x227		
+2	conv1	Convolution		3	227x227	96	55x55		param	34.94k
+3	relu1	ReLU		96	55x55	96	55x55		
+4	norm1	LRN		96	55x55	96	55x55		
+param	2
