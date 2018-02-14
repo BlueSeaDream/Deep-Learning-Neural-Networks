@@ -1,7 +1,7 @@
 ..* VGG
 
-| Layer        | Are           | Cool  |
+| Layer        | Kernel           | Cool  |
 | ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
+| conv1-1     | [3x3] Conv | $1600 |
+| conv1-2     | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
