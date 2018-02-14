@@ -1,4 +1,4 @@
-* VGG
+* VGG (553MB)
 
 | Layer        | Function        | Input | Ouput |
 | ------------- |:-------------| :-----|-------|
