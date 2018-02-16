@@ -70,4 +70,5 @@ Batch = 10
 | 38 |	drop7	| dropout |	4096 |	1x1	| 4096 |	1x1	| comp	40.96k | activation	40.96k |
 | 39 |	fc8	| inner_product |	4096 | 1x1 | 1000 |	1x1	| macc	40.96M | activation	10k param	4.1M |
 | 40 |	prob	| softmax |	1000 |	1x1 |	1000 |	1x1	| add	10k div	10k exp	10k activation	10k |
-| TOTAL |	macc	154.7G comp	196.85M add	10k div	10k exp	10k |
+| TOTAL |	| | | | | macc	154.7G comp	196.85M add	10k div	10k exp	10k | activation	288.03M param	138.36M |
+
