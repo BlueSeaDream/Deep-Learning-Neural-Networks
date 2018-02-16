@@ -35,6 +35,8 @@ Batch = 10
 | 3	| relu1_1	| relu | 64	 | 224x224 |	64	| 224x224	| comp	32.11M | activation	32.11M |
 | 4	| conv1_2	| convolution | 64 | 224x224 | 	64	| 224x224	| macc	18.5G |activation	32.11M param	36.93k |
 | 5	| relu1_2	| relu | 		64| 	224x224| 	64| 	224x224| 	comp	32.11M activation	32.11M | 
+
+
 6	pool1	pooling		64	224x224	64	112x112	
 comp	32.11M
 activation	8.03M
