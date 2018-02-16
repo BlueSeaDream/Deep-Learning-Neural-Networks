@@ -25,6 +25,7 @@
 | fc8         | FC: [10,4096] Relu Dropout:0.5 | [10 1000] | [10 1000] |
 
 | ID | Name | Type | Batch | Input Channel | Input Dimension | Output Channel | Output Dimension | OPS | Mem |
+
 | ... | :... | :... | :... | :... | :... |:... | :... | :... | :... | 
 | 1	 | data | data | 10    |	3	           | 224x224         | 	3	            | 224x224	|              | activation	1.51M |
 
