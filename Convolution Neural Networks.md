@@ -12,7 +12,7 @@ Batch = 10
 | 5	| relu1_2	| relu | 		64| 	224x224| 	64| 	224x224| 	comp	32.11M | activation	32.11M | 
 | 6	| pool1 | pooling | 		64| 	224x224| 	64| 	112x112| 	comp	32.11M | activation	8.03M |
 | 7	| conv2_1 | conv | 64 | 	112x112 | 	128 | 	112x112	| macc	9.25G |activation	16.06M <br> param	73.86k |
-| 8	| relu2_1	| relu | 128 | 112x112 |128 |	112x112	|comp	16.06M activation	16.06M |
+| 8	| relu2_1	| relu | 128 | 112x112 |128 |	112x112	|comp	16.06M | activation	16.06M |
 | 9	| conv2_2 | conv | 128 | 112x112 | 128 | 112x112 | macc	18.5G | activation	16.06M <br> param	147.58k |
 | 10 | relu2_2 | relu |	128 |	112x112 |	128 |	112x112 |	comp	16.06M | activation	16.06M |
 | 11 | pool2 |	pooling |	128 |	112x112 |	128 |	56x56 |	comp	16.06M  | activation	4.01M  |
@@ -44,5 +44,5 @@ Batch = 10
 | 37 |	relu7	| relu | 4096 |	1x1 |	4096 |	1x1	| comp	40.96k | activation	40.96k |
 | 38 |	drop7	| dropout |	4096 |	1x1	| 4096 |	1x1	| comp	40.96k | activation	40.96k |
 | 39 |	fc8	| inner product |	4096 | 1x1 | 1000 |	1x1	| macc	40.96M | activation	10k <br> param	4.1M |
-| 40 |	prob	| softmax |	1000 |	1x1 |	1000 |	1x1	| add	10k div	10k exp	10k activation	10k |
-| TOTAL |	| | | | | | macc	154.7G comp	196.85M add	10k div	10k exp	10k | activation	288.03M <br> param	138.36M |
+| 40 |	prob	| softmax |	1000 |	1x1 |	1000 |	1x1	| add	10k <br> div	10k <br> exp	10k  <br>  activation	10k |
+| TOTAL |	| | | | | | macc	154.7G  <br> comp	196.85M  <br> add	10k  <br>  div	10k  <br> exp	10k | activation	288.03M <br> param	138.36M |
