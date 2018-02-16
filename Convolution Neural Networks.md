@@ -49,16 +49,9 @@ Batch = 10
 | 17 |	relu3_3 |	relu |		256 |	56x56 |	256 |	56x56 |	 | comp	8.03M activation	8.03M |
 | 18 |	pool3 |	pooling |	256 |	56x56 |	256 |	28x28 |	comp	8.03M activation	2.01M  |
 | 19 |	conv4_1 |	convolution |		256 |	28x28 |	512 |	28x28 |	macc	9.25G | activation	4.01M param	1.18M  |
-| 20 |	relu4_1	relu		512	28x28	512	28x28	
-comp	4.01M
-activation	4.01M
-| 21 |	conv4_2	convolution		512	28x28	512	28x28	
-macc	18.5G
-activation	4.01M
-param	2.36M
-| 22 |	relu4_2	relu		512	28x28	512	28x28	
-comp	4.01M
-activation	4.01M
+| 20 |	relu4_1 |	relu |		512 |	28x28 |	512 |	28x28 |	comp | |4.01M activation	4.01M  |
+| 21 |	conv4_2 |	convolution |		512 |	28x28 |	512 |	28x28 |	macc	18.5G  | activation	4.01M param	2.36M  |
+| 22 |	relu4_2  | relu |		512 |	28x28 |	512 |	28x28 |	 | comp	4.01M activation	4.01M
 | 23 |	conv4_3	convolution		512	28x28	512	28x28	
 macc	18.5G
 activation	4.01M
