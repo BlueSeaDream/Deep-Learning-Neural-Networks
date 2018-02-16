@@ -29,7 +29,7 @@ Batch = 10
 
 
 | ID | Name | Type | Input Channel | Input Dimension | Output Channel | Output Dimension | OPS | Mem |
-| --- | :--- | :--- | :--- | :--- | :--- |:--- | :--- | :--- | :--- | 
+| --- | :--- | :--- | :--- | :--- | :--- |:--- | :--- | :--- | 
 | 1	 | data | data | 10    |	3	  | 224x224 | 	3	 | 224x224	|              | activation	1.51M |
 | 2	| conv1_1 | 	convolution	| 	3	 | 224x224	| 64	| 224x224	| macc	867.04M | activation	32.11M param	1.79k |
 | 3	| relu1_1	| relu | 64	 | 224x224 |	64	| 224x224	| comp	32.11M | activation	32.11M |
