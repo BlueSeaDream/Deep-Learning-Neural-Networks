@@ -5,7 +5,7 @@ Batch = 10
 
 | ID | Name | Type | Input CH | Input DIM | Output CH | Output DIM | OPS | Mem |
 | -- | :--- | :--- | :--- | :--- | :--- |:--- | :--- | :--- | 
-| 1	 | data | data | 10    |	3	  | 224x224 | 	3	 | 224x224	|              | activation	1.51M |
+| 1	 | data | data | 10    |	3	  | 224x224 | 	3	 | 224x224	| activation	1.51M |
 | 2	| conv1_1 | conv	| 	3	 | 224x224	| 64	| 224x224	| macc	867.04M | activation	32.11M <br> param	1.79k |
 | 3	| relu1_1	| relu | 64	 | 224x224 |	64	| 224x224	| comp	32.11M | activation	32.11M |
 | 4	| conv1_2	| conv | 64 | 224x224 | 	64	| 224x224	| macc	18.5G |activation	32.11M <br> param	36.93k |
