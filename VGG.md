@@ -1,4 +1,4 @@
-* VGG (553MB)
+* VGG16 (553MB)
 
 Batch = 10
 
