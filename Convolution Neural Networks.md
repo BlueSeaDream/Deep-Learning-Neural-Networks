@@ -46,75 +46,28 @@ Batch = 10
 | 14 |	conv3_2 |	convolution |		256 |	56x56 |	256 |	56x56 |	macc	18.5G |activation	8.03M param	590.08k  |
 | 15 |	relu3_2 |	relu |	256 |	56x56 |	256 |	56x56 |	comp	8.03M | activation	8.03M
 | 16 |	conv3_3 |	convolution |	256	 |56x56	 |256	 |56x56	 |macc	18.5G | activation	8.03M param	590.08k  |
-| 17 |	relu3_3 |	relu |		256 |	56x56 |	256 |	56x56 |	 | comp	8.03M activation	8.03M |
-| 18 |	pool3 |	pooling |	256 |	56x56 |	256 |	28x28 |	comp	8.03M activation	2.01M  |
+| 17 |	relu3_3 |	relu |		256 |	56x56 |	256 |	56x56 | comp	8.03M | activation	8.03M |
+| 18 |	pool3 |	pooling |	256 |	56x56 |	256 |	28x28 |	comp	8.03M | activation	2.01M  |
 | 19 |	conv4_1 |	convolution |		256 |	28x28 |	512 |	28x28 |	macc	9.25G | activation	4.01M param	1.18M  |
-| 20 |	relu4_1 |	relu |		512 |	28x28 |	512 |	28x28 |	comp | 4.01M | activation	4.01M  |
+| 20 |	relu4_1 |	relu |		512 |	28x28 |	512 |	28x28 |	comp 4.01M | activation	4.01M  |
 | 21 |	conv4_2 |	convolution |		512 |	28x28 |	512 |	28x28 |	macc	18.5G  | activation	4.01M param	2.36M  |
-| 22 |	relu4_2  | relu |		512 |	28x28 |	512 |	28x28 |	 | comp	4.01M activation	4.01M
-
-
-| 23 |	conv4_3	convolution		512	28x28	512	28x28	
-macc	18.5G
-activation	4.01M
-param	2.36M
-| 24 |	relu4_3	relu		512	28x28	512	28x28	
-comp	4.01M
-activation	4.01M
-| 25 |	pool4	pooling		512	28x28	512	14x14	
-comp	4.01M
-activation	1M
-| 26 |	conv5_1	convolution		512	14x14	512	14x14	
-macc	4.62G
-activation	1M
-param	2.36M
-| 27 |	relu5_1	relu		512	14x14	512	14x14	
-comp	1M
-activation	1M
-| 28 |	conv5_2	convolution		512	14x14	512	14x14	
-macc	4.62G
-activation	1M
-param	2.36M
-| 29 |	relu5_2	relu		512	14x14	512	14x14	
-comp	1M
-activation	1M
-| 30 |	conv5_3	convolution		512	14x14	512	14x14	
-macc	4.62G
-activation	1M
-param	2.36M
-| 31 |	relu5_3	relu		512	14x14	512	14x14	
-comp	1M
-activation	1M
-| 32 |	pool5	pooling		512	14x14	512	7x7	
-comp	1M
-activation	250.88k
-| 33 |	fc6	inner_product		512	7x7	4096	1x1	
-macc	1.03G
-activation	40.96k
-param	102.76M
-| 34 |	relu6	relu		4096	1x1	4096	1x1	
-comp	40.96k
-activation	40.96k
-| 35 |	drop6	dropout		4096	1x1	4096	1x1	
-comp	40.96k
-activation	40.96k
-| 36 |	fc7	inner_product		4096	1x1	4096	1x1	
-macc	167.77M
-activation	40.96k
-param	16.78M
-| 37 |	relu7	relu		4096	1x1	4096	1x1	
-comp	40.96k
-activation	40.96k
-| 38 |	drop7	dropout		4096	1x1	4096	1x1	
-comp	40.96k
-activation	40.96k
-| 39 |	fc8	inner_product		4096	1x1	1000	1x1	
-macc	40.96M
-activation	10k
-param	4.1M
-| 40 |	prob	softmax		1000	1x1	1000	1x1	
-add	10k
-div	10k
-exp	10k
-activation	10k
+| 22 |	relu4_2  | relu |		512 |	28x28 |	512 |	28x28 |	comp	4.01M | activation	4.01M |
+| 23 |	conv4_3	| convolution	|	512	|28x28	|512	|28x28 |	macc	18.5G |activation	4.01M param	2.36M |
+| 24 |	relu4_3 |	relu |		512	| 28x28	| 512 |	28x28	| comp	4.01M | activation	4.01M |
+| 25 |	pool4 |	pooling |		512	| 28x28 |	512	| 14x14 |	comp	4.01M | activation	1M |
+| 26 |	conv5_1	| convolution |		512 |	14x14 |	512 |	14x14 |	macc	4.62G | activation	1M param	2.36M |
+| 27 |	relu5_1	| relu | 512 | 14x14 |	512 |	14x14 |	comp	1M | activation	1M |
+| 28 |	conv5_2	| convolution	|	512 |	14x14 |	512 |	14x14	| macc	4.62G | activation	1M param	2.36M |
+| 29 |	relu5_2	| relu | 512 | 14x14 | 512 | 14x14 | comp	1M | activation	1M |
+| 30 |	conv5_3	| convolution | 512 |	14x14 |	512 |	14x14 |	macc	4.62G | activation	1M | param	2.36M |
+| 31 |	relu5_3	| relu | 512 | 14x14 |	512	| 14x14	| comp	1M | activation	1M |
+| 32 |	pool5	| pooling |	512 |	14x14 |	512	 | 7x7 |	comp	1M | activation	250.88k |
+| 33 |	fc6	inner_product	|	512	| 7x7 |	4096 | 1x1 | 	macc	1.03G | activation	40.96k param	102.76M |
+| 34 |	relu6	| relu | 4096 |	1x1	| 4096 | 1x1 |	comp	40.96k | activation	40.96k |
+| 35 |	drop6	| dropout |	4096 | 1x1 | 4096 |	1x1	| comp	40.96k | activation	40.96k |
+| 36 |	fc7	inner_product	| 4096 | 1x1 | 4096 |	1x1	| macc	167.77M | activation	40.96k param	16.78M |
+| 37 |	relu7	| relu | 4096 |	1x1 |	4096 |	1x1	| comp	40.96k | activation	40.96k |
+| 38 |	drop7	| dropout |	4096 |	1x1	| 4096 |	1x1	| comp	40.96k | activation	40.96k |
+| 39 |	fc8	| inner_product |	4096 | 1x1 | 1000 |	1x1	| macc	40.96M | activation	10k param	4.1M |
+| 40 |	prob	| softmax |	1000 |	1x1 |	1000 |	1x1	| add	10k div	10k exp	10k activation	10k |
 | TOTAL |	macc	154.7G comp	196.85M add	10k div	10k exp	10k |
