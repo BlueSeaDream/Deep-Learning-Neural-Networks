@@ -52,6 +52,8 @@ Batch = 10
 | 20 |	relu4_1 |	relu |		512 |	28x28 |	512 |	28x28 |	comp | |4.01M activation	4.01M  |
 | 21 |	conv4_2 |	convolution |		512 |	28x28 |	512 |	28x28 |	macc	18.5G  | activation	4.01M param	2.36M  |
 | 22 |	relu4_2  | relu |		512 |	28x28 |	512 |	28x28 |	 | comp	4.01M activation	4.01M
+
+
 | 23 |	conv4_3	convolution		512	28x28	512	28x28	
 macc	18.5G
 activation	4.01M
