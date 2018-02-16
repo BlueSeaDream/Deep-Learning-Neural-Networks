@@ -8,8 +8,7 @@ Batch = 10
 | 1	| data | Input | 3	| 227x227	| 3	| 227x227		|  | activation	1.55M |
 | 2	| conv1 | Convolution | 3	 |  227x227	| 96	|  55x55	| macc	1.05G | activation	2.9M <br> param	34.94k | 
 | 3	| relu1	| ReLU | 96	| 55x55 | 96 | 55x55	| comp	2.9M | activation	2.9M |
-| 4	| norm1	| LRN | 96	| 55x55	| 96 | 55x55	| macc	14.52M <br> add	2.9M <br> div	5.81M <br> exp	2.9M |
-activation	2.9M <br> param	2 |
+| 4	| norm1	| LRN | 96	| 55x55	| 96 | 55x55	| macc	14.52M <br> add	2.9M <br> div	5.81M <br> exp	2.9M | activation	2.9M <br> param	2 |
 | 5	| pool1 | Pooling | 96 | 55x55 |	96| 	27x27| 	comp	6.3M | activation	699.84k |
 
 
