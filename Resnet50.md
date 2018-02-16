@@ -1,7 +1,8 @@
+* Resnet 50
 
+| ID | Name | Type | Input CH | Input DIM | Output CH | Output DIM | OPS | Mem |
 
-1	data	data		3	224x224	3	224x224		
-activation	150.53k
+| 1	| data	| data	| 	3	| 224x224 | 	3	| 224x224 | activation	150.53k | 
 2	conv1	Convolution		3	224x224	64	112x112	
 macc	118.01M
 activation	802.82k
