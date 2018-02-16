@@ -1,8 +1,5 @@
 * Alex
 
-Batch = 10
-
-
 | ID | Name | Type | Input CH | Input DIM | Output CH | Output DIM | OPS | Mem |
 | -- | :--- | :--- | :--- | :--- | :--- |:--- | :--- | :--- | 
 | 1	| data | Input | 3	| 227x227	| 3	| 227x227		|  | activation	1.55M |
