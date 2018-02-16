@@ -3,12 +3,10 @@
 | ID | Name | Type | Input CH | Input DIM | Output CH | Output DIM | OPS | Mem |
 | -- | :--- | :--- | :--- | :--- | :--- |:--- | :--- | :--- | 
 | 1	| data	| data	| 	3	| 224x224 | 	3	| 224x224 | activation	150.53k | 
-| 2	| conv1	| Conv | 		| 3	| 224x224	| 64	| 112x112	| macc	118.01M | activation	802.82k<br>param	9.47k | 
-3	bn_conv1	BatchNorm		64	112x112	64	112x112	
-add	802.82k
-div	802.82k
-activation	802.82k
-param	128
+| 2	| conv1	| Conv | 3	|  224x224	| 64	| 112x112	| macc	118.01M | activation	802.82k<br>param	9.47k | 
+| 3	| bn_conv1	| BatchNorm | 64	| 112x112	| 64	| 112x112 | add	802.82k<br>div	802.82k | activation	802.82k param	128 | 
+
+
 4	scale_conv1	Scale		64	112x112	64	112x112	
 macc	802.82k
 activation	802.82k
