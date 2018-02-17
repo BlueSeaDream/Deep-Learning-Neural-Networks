@@ -5,36 +5,16 @@
 | 1	| data	| data	| 	3	| 224x224 | 	3	| 224x224 | activation	150.53k | 
 | 2	| conv1	| Conv | 3	|  224x224	| 64	| 112x112	| macc	118.01M | activation	802.82k<br>param	9.47k | 
 | 3	| bn_conv1	| BatchNorm | 64	| 112x112	| 64	| 112x112 | add	802.82k<br>div	802.82k | activation	802.82k param	128 | 
+| 4	| scale_conv1	| Scale		| 64	| 112x112	| 64	| 112x112	| macc	802.82k | activation	802.82k | 
+| 5	| conv1_relu	| ReLU		| 64	| 112x112	| 64	| 112x112	| comp	802.82k | activation	802.82k | 
+| 6	| pool1	| Pooling| 		| 64 | 	| 112x112	| 64	| 56x56	| comp | 	1.81M | activation	200.7k | 
+| 7	| res2a<br>branch2a	| Convolution | 		64	| 56x56	| 64	| 56x56	| macc	12.85M | activation	200.7k<br>param	4.1k | 
+| 8	| bn2a<br>branch2a	| BatchNorm	| 	64	| 56x56	| 64	| 56x56	| add	200.7k | div	200.7k | activation	200.7k<br>param	128| 
+| 9	| scale2a<br>branch2a	| Scale	| 	64	| 56x56	| 64	| 56x56	| macc	200.7k<br>activation	200.7k | 
+| 10 | res2a<br>branch2a<br> | relu	| ReLU		| 64	| 56x56	| 64	| 56x56	| comp	200.7k | activation	200.7k | 
+| 11 | res2a<br>branch2b	| Convolution	| 64	| 56x56	| 64	| 56x56	| macc	115.61M | activation	200.7k<br>param	36.86k|
 
 
-4	scale_conv1	Scale		64	112x112	64	112x112	
-macc	802.82k
-activation	802.82k
-5	conv1_relu	ReLU		64	112x112	64	112x112	
-comp	802.82k
-activation	802.82k
-6	pool1	Pooling		64	112x112	64	56x56	
-comp	1.81M
-activation	200.7k
-7	res2a_branch2a	Convolution		64	56x56	64	56x56	
-macc	12.85M
-activation	200.7k
-param	4.1k
-8	bn2a_branch2a	BatchNorm		64	56x56	64	56x56	
-add	200.7k
-div	200.7k
-activation	200.7k
-param	128
-9	scale2a_branch2a	Scale		64	56x56	64	56x56	
-macc	200.7k
-activation	200.7k
-10	res2a_branch2a_relu	ReLU		64	56x56	64	56x56	
-comp	200.7k
-activation	200.7k
-11	res2a_branch2b	Convolution		64	56x56	64	56x56	
-macc	115.61M
-activation	200.7k
-param	36.86k
 12	bn2a_branch2b	BatchNorm		64	56x56	64	56x56	
 add	200.7k
 div	200.7k
