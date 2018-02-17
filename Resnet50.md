@@ -26,29 +26,14 @@
 | 22	| res2a<br>relu	| ReLU		| 256	| 56x56	| 256	| 56x56	| comp	802.82k | activation	802.82k | 
 | 23	| res2b<br>branch2a	| Convolution		| 256	| 56x56	| 64	| 56x56	| macc	51.38M | activation	200.7k<br>param	16.38k | 
 | 24	| bn2b<br>branch2a	| BatchNorm		| 64	| 56x56	| 64	| 56x56	| add	200.7k<br>div	200.7k | activation	200.7k<br>param	128 |
+| 25	| scale2b_branch2a	| Scale	| 	64 | 	56x56	| 64	| 56x56	| macc	200.7k | activation	200.7k | 
+| 26	| res2b_branch2a_relu	| ReLU	| 	64	| 56x56	| 64	| 56x56	| comp	200.7k | activation	200.7k | 
+| 27	| res2b_branch2b	| Convolution	| 	64	| 56x56	| 64	| 56x56	| macc	115.61M | activation	200.7k<br>param	36.86k | 
+| 28	| bn2b_branch2b	| BatchNorm		| 64	| 56x56	| 64	| 56x56	| add	200.7k<br>div	200.7k | activation	200.7k<br>param	128 | 
+| 29	| scale2b_branch2b	| Scale		| 64	| 56x56	| 64	| 56x56	| macc	200.7k | activation	200.7k | 
+| 30	| res2b_branch2b_relu	| ReLU	| 	64	| 56x56	| 64	| 56x56	| comp	200.7k | activation	200.7k | 
 
 
-25	scale2b_branch2a	Scale		64	56x56	64	56x56	
-macc	200.7k
-activation	200.7k
-26	res2b_branch2a_relu	ReLU		64	56x56	64	56x56	
-comp	200.7k
-activation	200.7k
-27	res2b_branch2b	Convolution		64	56x56	64	56x56	
-macc	115.61M
-activation	200.7k
-param	36.86k
-28	bn2b_branch2b	BatchNorm		64	56x56	64	56x56	
-add	200.7k
-div	200.7k
-activation	200.7k
-param	128
-29	scale2b_branch2b	Scale		64	56x56	64	56x56	
-macc	200.7k
-activation	200.7k
-30	res2b_branch2b_relu	ReLU		64	56x56	64	56x56	
-comp	200.7k
-activation	200.7k
 31	res2b_branch2c	Convolution		64	56x56	256	56x56	
 macc	51.38M
 activation	802.82k
