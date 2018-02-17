@@ -25,8 +25,7 @@
 | 21	| res2a	| Eltwise	| 	256	| 56x56	| 256	| 56x56	| add	802.82k | activation	802.82k | 
 | 22	| res2a<br>relu	| ReLU		| 256	| 56x56	| 256	| 56x56	| comp	802.82k | activation	802.82k | 
 | 23	| res2b<br>branch2a	| Convolution		| 256	| 56x56	| 64	| 56x56	| macc	51.38M | activation	200.7k<br>param	16.38k | 
-| 24	| bn2b<br>branch2a	| BatchNorm		| 64	| 56x56	| 64	| 56x56	| add	200.7k<br>div	200.7k | activation	200.7k<br>
-param	128 |
+| 24	| bn2b<br>branch2a	| BatchNorm		| 64	| 56x56	| 64	| 56x56	| add	200.7k<br>div	200.7k | activation	200.7k<br>param	128 |
 
 
 25	scale2b_branch2a	Scale		64	56x56	64	56x56	
