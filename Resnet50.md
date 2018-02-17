@@ -13,43 +13,15 @@
 | 9	| scale2a<br>branch2a	| Scale	| 	64	| 56x56	| 64	| 56x56	| macc	200.7k<br>activation	200.7k | 
 | 10 | res2a<br>branch2a<br>relu	| ReLU		| 64	| 56x56	| 64	| 56x56	| comp	200.7k | activation	200.7k | 
 | 11 | res2a<br>branch2b	| Convolution	| 64	| 56x56	| 64	| 56x56	| macc	115.61M | activation	200.7k<br>param	36.86k|
-
-
-12	bn2a_branch2b	BatchNorm		64	56x56	64	56x56	
-add	200.7k
-div	200.7k
-activation	200.7k
-param	128
-13	scale2a_branch2b	Scale		64	56x56	64	56x56	
-macc	200.7k
-activation	200.7k
-14	res2a_branch2b_relu	ReLU		64	56x56	64	56x56	
-comp	200.7k
-activation	200.7k
-15	res2a_branch2c	Convolution		64	56x56	256	56x56	
-macc	51.38M
-activation	802.82k
-param	16.38k
-16	bn2a_branch2c	BatchNorm		256	56x56	256	56x56	
-add	802.82k
-div	802.82k
-activation	802.82k
-param	512
-17	scale2a_branch2c	Scale		256	56x56	256	56x56	
-macc	802.82k
-activation	802.82k
-18	res2a_branch1	Convolution		64	56x56	256	56x56	
-macc	51.38M
-activation	802.82k
-param	16.38k
-19	bn2a_branch1	BatchNorm		256	56x56	256	56x56	
-add	802.82k
-div	802.82k
-activation	802.82k
-param	512
-20	scale2a_branch1	Scale		256	56x56	256	56x56	
-macc	802.82k
-activation	802.82k
+| 12 | bn2a<br>branch2b 	| BatchNorm		| 64	| 56x56	| 64	| 56x56	| add	200.7k<br>div	200.7k| activation	200.7k<br>param	128 |
+| 13	| scale2a<br>branch2b	| Scale	| 	64	| 56x56	| 64	| 56x56	| macc	200.7k | activation	200.7k | 
+| 14	| res2a<br>branch2b<br>relu	| ReLU		| 64	| 56x56	| 64	| 56x56	| comp	200.7k | activation	200.7k | 
+| 15	| res2a<br>branch2c	| Convolution		| 64	| 56x56	| 256	| 56x56	| macc	51.38M | activation	802.82k<br>param	16.38k | 
+| 16	| bn2a<br>branch2c	| BatchNorm	| 256	| 56x56	| 256	| 56x56 | 	add	802.82k<br>div	802.82k | activation	802.82k<br>param 512 | 
+| 17	| scale2a<br>branch2c	| Scale		| 256	| 56x56	| 256	| 56x56	| macc	802.82k | activation	802.82k | 
+| 18	| res2a<br>branch1	| Convolution		| 64	| 56x56	| 256	| 56x56	| macc	51.38M | activation	802.82k<br>param	16.38k | 
+| 19	| bn2a<br>branch1	| BatchNorm	| 	256	| 56x56	| 256	| 56x56	| add	802.82k<br>div	802.82k | activation	802.82k<br>param	512 | 
+| 20	| scale2a<br>branch1	| Scale	| 	256	| 56x56	| 256	| 56x56	| macc	802.82k | activation	802.82k | 
 21	res2a	Eltwise		256	56x56	256	56x56	
 add	802.82k
 activation	802.82k
