@@ -2,7 +2,7 @@
 
 | ID | Name | Type | Input CH | Input DIM | Output CH | Output DIM | OPS | Mem |
 | -- | :--- | :--- | :--- | :--- | :--- |:--- | :--- | :--- | 
-| 1	| data	| data		| 3	| 224x224	| 3	| 224x224		| | activation | 	150.53k | 
+| 1	| data	| data		| 3	| 224x224	| 3	| 224x224		| | activation 	150.53k | 
 | 2	| conv1_1	| conv | 		3	| 224x224	| 64	| 224x224	| macc	86.7M | activation	3.21M<br>param	1.79k | 
 | 3	| relu1_1	| relu		| 64	| 224x224	| 64	| 224x224	| comp	| 3.21M | activation	3.21M | 
 | 4	| conv1_2	| convolution	| 	64	| 224x224	| 64	| 224x224	| macc	| 1.85G | activation	3.21M<br>param	36.93k | 
@@ -25,6 +25,9 @@
 | 21	| conv4_2	| convolution	| 	512	| 28x28	| 512	| 28x28	| macc	1.85G<br>activation	401.41k<br>param	2.36M | 
 | 22	| relu4_2	| relu	| 	512	| 28x28	| 512	| 28x28	| comp	401.41k<br>activation	401.41k | 
 | 23	| conv4_3	| convolution	| 	512	| 28x28	| 512	| 28x28	| macc	1.85G | activation	401.41k<br>param	2.36M | 
+
+
+
 24	relu4_3	relu		512	28x28	512	28x28	comp	401.41k
 	activation	401.41k
 25	pool4	pooling		512	28x28	512	14x14	comp	401.41k
