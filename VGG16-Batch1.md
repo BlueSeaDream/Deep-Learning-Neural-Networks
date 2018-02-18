@@ -1,7 +1,7 @@
 * VGG16 Batch = 1
 
 | ID | Name | Type | Input CH | Input DIM | Output CH | Output DIM | OPS | Mem |
-
+| -- | :--- | :--- | :--- | :--- | :--- |:--- | :--- | :--- | 
 | 1	| data	| data		| 3	| 224x224	| 3	| 224x224		| | activation | 	150.53k | 
 | 2	| conv1_1	| conv | 		3	| 224x224	| 64	| 224x224	| macc	86.7M | activation	3.21M<br>param	1.79k | 
 | 3	| relu1_1	| relu		| 64	| 224x224	| 64	| 224x224	| comp	| 3.21M | activation	3.21M | 
