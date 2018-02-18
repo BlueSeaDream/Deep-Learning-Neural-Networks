@@ -18,8 +18,8 @@
 | 14	| conv3_2	| convolution	| 256	| 56x56	| 256	| 56x56	| macc	1.85G | activation	802.82k<br>param	590.08k | 
 | 15	| relu3_2	| relu | 256	| 56x56	| 256	| 56x56	| comp	802.82k | activation	802.82k | 
 | 16	| conv3_3	| convolution		| 256	| 56x56	| 256	| 56x56	| macc	1.85G | activation	802.82k<br>param	590.08k | 
-| 17	| relu3_3	| relu		| 256	| 56x56	| 256	| 56x56	| comp	| 802.82k | activation	802.82k | 
-| 18	| pool3	| pooling		| 256	| 56x56	| 256	| 28x28	| comp	| 802.82k | activation	200.7k | 
+| 17	| relu3_3	| relu		| 256	| 56x56	| 256	| 56x56	| comp	802.82k | activation	802.82k | 
+| 18	| pool3	| pooling		| 256	| 56x56	| 256	| 28x28	| comp	802.82k | activation	200.7k | 
 | 19	| conv4_1	| convolution		| 256	| 28x28	| 512	| 28x28	| macc	924.84M | activation	401.41k<br>param	1.18M | 
 | 20	| relu4_1	| relu		| 512	| 28x28	| 512	| 28x28	| comp	401.41k | activation	401.41k | 
 | 21	| conv4_2	| convolution	| 	512	| 28x28	| 512	| 28x28	| macc	1.85G | activation	401.41k<br>param	2.36M | 
