@@ -38,9 +38,8 @@
 | 34	| relu6	| relu		| 4096	| 1x1	| 4096	| 1x1	| comp	| 4.1k | activation	4.1k | 
 | 35	| drop6	| dropout	| 	4096	| 1x1	| 4096	| 1x1	| comp	4.1k<br>activation 4.1k | 
 | 36	| fc7	| inner_product	| 	4096	| 1x1	| 4096	| 1x1	| macc	16.78M | activation	4.1k<br>param	16.78M | 
-| 37	| relu7	| relu		| 4096	| 1x1	| 4096	| 1x1	| comp	4.1k<br>activation	4.1k | 
+| 37	| relu7	| relu		| 4096	| 1x1	| 4096	| 1x1	| comp	4.1k | activation	4.1k | 
 | 38	| drop7	| dropout	| 	4096	| 1x1	| 4096	| 1x1	| comp	| 4.1k | activation	4.1k | 
 | 39	| fc8	| inner_product	| 	4096	| 1x1	| 1000	| 1x1	| macc	4.1M | activation	1000<br>param	4.1M | 
 | 40	| prob	| softmax	| 	1000	| 1x1	| 1000	| 1x1	| add	1000<br>div	1000<br>exp	1000 | activation	1000 |
-| TOTAL | | | | | | | macc	15.47G <br>comp	19.69M<br>add	1000<br>div	1000<br>exp	1000 | activation	28.8M<br>
-param	138.36M |
+| TOTAL | | | | | | | macc	15.47G <br>comp	19.69M<br>add	1000<br>div	1000<br>exp	1000 | activation	28.8M<br>param	138.36M |
