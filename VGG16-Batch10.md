@@ -1,7 +1,4 @@
-* VGG16
-
-Batch = 10
-
+* VGG16 Batch = 10
 
 | ID | Name | Type | Input CH | Input DIM | Output CH | Output DIM | OPS | Mem |
 | -- | :--- | :--- | :--- | :--- | :--- |:--- | :--- | :--- | 
