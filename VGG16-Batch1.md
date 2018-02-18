@@ -14,27 +14,22 @@
 | 10| relu2_2	| relu	| 	128	| 112x112	| 128	| 112x112	| comp	| 1.61M	| activation	1.61M | 
 | 11| 	pool2	| pooling	| 	128	| 112x112	| 128	| 56x56	| comp	1.61M | activation	401.41k | 
 | 12	| conv3_1	| convolution	| 128	| 56x56	| 256	| 56x56	| macc	924.84M | activation	802.82k<br>param	295.17k | 
-| 13	| relu3_1	relu	| 	256	| 56x56	| 256	| 56x56	| comp	| 802.82k | activation	802.82k | 
+| 13	| relu3_1	relu	| 	256	| 56x56	| 256	| 56x56	| comp	802.82k | activation	802.82k | 
 | 14	| conv3_2	| convolution	| 256	| 56x56	| 256	| 56x56	| macc	1.85G | activation	802.82k<br>param	590.08k | 
-| 15	| relu3_2	| relu | 256	| 56x56	| 256	| 56x56	| comp	| 802.82k<br>activation	802.82k | 
+| 15	| relu3_2	| relu | 256	| 56x56	| 256	| 56x56	| comp	802.82k | activation	802.82k | 
 | 16	| conv3_3	| convolution		| 256	| 56x56	| 256	| 56x56	| macc	1.85G | activation	802.82k<br>param	590.08k | 
 | 17	| relu3_3	| relu		| 256	| 56x56	| 256	| 56x56	| comp	| 802.82k | activation	802.82k | 
 | 18	| pool3	| pooling		| 256	| 56x56	| 256	| 28x28	| comp	| 802.82k | activation	200.7k | 
-| 19	| conv4_1	| convolution		| 256	| 28x28	| 512	| 28x28	| macc	924.84M<br>activation	401.41k<br>param	1.18M | 
+| 19	| conv4_1	| convolution		| 256	| 28x28	| 512	| 28x28	| macc	924.84M | activation	401.41k<br>param	1.18M | 
 | 20	| relu4_1	| relu		| 512	| 28x28	| 512	| 28x28	| comp	401.41k | activation	401.41k | 
-| 21	| conv4_2	| convolution	| 	512	| 28x28	| 512	| 28x28	| macc	1.85G<br>activation	401.41k<br>param	2.36M | 
-| 22	| relu4_2	| relu	| 	512	| 28x28	| 512	| 28x28	| comp	401.41k<br>activation	401.41k | 
-| 23	| conv4_3	| convolution	| 	512	| 28x28	| 512	| 28x28	| macc	1.85G | activation	401.41k<br>param	2.36M | 
+| 21	| conv4_2	| convolution	| 	512	| 28x28	| 512	| 28x28	| macc	1.85G | activation	401.41k<br>param	2.36M | 
+| 22	| relu4_2	| relu	| 	512	| 28x28	| 512	| 28x28	| comp	401.41k | activation	401.41k | 
+| 23	| conv4_3	| convolution	| 	512	| 28x28	| 512	| 28x28	| macc	1.85G | activation 401.41k<br>param	2.36M | 
+| 24	| relu4_3 | relu	| 512	| 28x28	| 512	| 28x28	| comp	401.41k | activation	401.41k | 
+| 25	| pool4	| pooling	| 512	| 28x28	| 512	| 14x14	| comp	401.41k | activation	100.35k | 
+| 26	| conv5_1 | convolution | 512	| 14x14	| 512	| 14x14	| macc	462.42M | activation	100.35k<br>param 2.36M | 
 
 
-
-24	relu4_3	relu		512	28x28	512	28x28	comp	401.41k
-	activation	401.41k
-25	pool4	pooling		512	28x28	512	14x14	comp	401.41k
-	activation	100.35k
-26	conv5_1	convolution		512	14x14	512	14x14	macc	462.42M
-	activation	100.35k
-param	2.36M
 27	relu5_1	relu		512	14x14	512	14x14	comp	100.35k
 	activation	100.35k
 28	conv5_2	convolution		512	14x14	512	14x14	macc	462.42M
