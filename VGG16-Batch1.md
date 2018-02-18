@@ -14,7 +14,7 @@
 | 10| relu2_2	| relu	| 	128	| 112x112	| 128	| 112x112	| comp	| 1.61M	| activation	1.61M | 
 | 11| 	pool2	| pooling	| 	128	| 112x112	| 128	| 56x56	| comp	1.61M | activation	401.41k | 
 | 12	| conv3_1	| convolution	| 128	| 56x56	| 256	| 56x56	| macc	924.84M | activation	802.82k<br>param	295.17k | 
-| 13	| relu3_1	relu	| 	256	| 56x56	| 256	| 56x56	| comp	802.82k | activation	802.82k | 
+| 13	| relu3_1	| relu	| 	256	| 56x56	| 256	| 56x56	| comp	802.82k | activation	802.82k | 
 | 14	| conv3_2	| convolution	| 256	| 56x56	| 256	| 56x56	| macc	1.85G | activation	802.82k<br>param	590.08k | 
 | 15	| relu3_2	| relu | 256	| 56x56	| 256	| 56x56	| comp	802.82k | activation	802.82k | 
 | 16	| conv3_3	| convolution		| 256	| 56x56	| 256	| 56x56	| macc	1.85G | activation	802.82k<br>param	590.08k | 
@@ -34,7 +34,7 @@
 | 30	| conv5_3	| convolution	| 	512	| 14x14	| 512	| 14x14	| macc	462.42M | activation	100.35k<br>param	2.36M | 
 | 31	| relu5_3 | 	relu	| 	512	| 14x14	| 512	| 14x14	| comp 100.35k | activation 100.35k | 
 | 32	| pool5	| pooling	| 	512	| 14x14	| 512	| 7x7	| comp	100.35k | activation	25.09k | 
-| 33	| fc6	inner_product	| 	512	| 7x7	| 4096	| 1x1	| macc	102.76M | activation	4.1k<br>param	102.76M |
+| 33	| fc6	| inner_product	| 	512	| 7x7	| 4096	| 1x1	| macc	102.76M | activation	4.1k<br>param	102.76M |
 | 34	| relu6	| relu		| 4096	| 1x1	| 4096	| 1x1	| comp	| 4.1k | activation	4.1k | 
 | 35	| drop6	| dropout	| 	4096	| 1x1	| 4096	| 1x1	| comp	4.1k<br>activation 4.1k | 
 | 36	| fc7	| inner_product	| 	4096	| 1x1	| 4096	| 1x1	| macc	16.78M | activation	4.1k<br>param	16.78M | 
