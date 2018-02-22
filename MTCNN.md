@@ -14,3 +14,56 @@
 | 10	| conv4-1	| Convolution	| 	32	| 1x1	| 2	| 1x1	| macc	64 | activation	2<br>param	66 | 
 | 11	| prob1	| Softmax		| 2	| 1x1	| 2	| 1x1 | add	2<br>div	2<br>exp	2 | activation	2 |
 | TOTAL | | | | | | |	macc	44.76k<br>comp	2.18k | add	2<br>div	2<br>exp	2 | activation	3.04k<br>param	6.57k |
+
+* Proposal Net (O-Net)
+| ID | Name | Type | Input CH | Input DIM | Output CH | Output DIM | OPS | Mem |
+| -- | :--- | :--- | :--- | :--- | :--- |:--- | :--- | :--- | 
+| 1	| data	| data		| 3	| 24x24	| 3	| 24x24 | activation	1.73k | 
+| 2	| conv1	| Convolution	| 	3	| 24x24	| 28	| 22x22 | 	macc	365.9k | activation	13.55k<br>param	784 | 
+| 3	| prelu1	| PReLU	| 	28	| 22x22	| 28	| 22x22 | comp	13.55k | activation	13.55k | 
+| 4	| pool1	| Pooling	| 28	| 22x22	| 28	| 11x11	| comp	30.49k | activation	3.39k | 
+5	conv2	Convolution		28	11x11	48	9x9	
+macc	979.78k
+activation	3.89k
+param	12.14k
+6	prelu2	PReLU		48	9x9	48	9x9	
+comp	3.89k
+activation	3.89k
+7	pool2	Pooling		48	9x9	48	4x4	
+comp	6.91k
+activation	768
+8	conv3	Convolution		48	4x4	64	3x3	
+macc	110.59k
+activation	576
+param	12.35k
+9	prelu3	PReLU		64	3x3	64	3x3	
+comp	576
+activation	576
+10	conv4	InnerProduct		64	3x3	128	1x1	
+macc	73.73k
+activation	128
+param	73.86k
+11	prelu4	PReLU		128	1x1	128	1x1	
+comp	128
+activation	128
+12	conv5-2	InnerProduct		128	1x1	4	1x1	
+macc	512
+activation	4
+param	516
+13	conv5-1	InnerProduct		128	1x1	2	1x1	
+macc	256
+activation	2
+param	258
+14	prob1	Softmax		2	1x1	2	1x1	
+add	2
+div	2
+exp	2
+activation	2
+TOTAL							
+macc	1.53M
+comp	55.55k
+add	2
+div	2
+exp	2
+activation	42.18k
+param	99.91k
