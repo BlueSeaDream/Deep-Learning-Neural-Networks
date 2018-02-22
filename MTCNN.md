@@ -25,10 +25,10 @@
 | 3	| prelu1	| PReLU	| 	28	| 22x22	| 28	| 22x22 | comp	13.55k | activation	13.55k | 
 | 4	| pool1	| Pooling	| 28	| 22x22	| 28	| 11x11	| comp	30.49k | activation	3.39k | 
 | 5	| conv2	| Convolution		| 28	| 11x11	| 48	| 9x9	| macc	979.78k | activation	3.89k<br>param	12.14k | 
-| 6	| prelu2	| PReLU		| 48	| 9x9	| 48	| 9x9 | comp	3.89k<br>activation	3.89k | 
-| 7	| pool2	| Pooling	| 	48	| 9x9	| 48	| 4x4 | comp	6.91k<br>activation	768 | 
+| 6	| prelu2	| PReLU		| 48	| 9x9	| 48	| 9x9 | comp	3.89k | activation	3.89k | 
+| 7	| pool2	| Pooling	| 	48	| 9x9	| 48	| 4x4 | comp	6.91k | activation	768 | 
 | 8	| conv3	| Convolution	| 	48	| 4x4	| 64	| 3x3 | macc	110.59k | activation	576<br>param	12.35k | 
-| 9	| prelu3	| PReLU	| 64	| 3x3	| 64	| 3x3 | comp	576<br>activation	576 | 
+| 9	| prelu3	| PReLU	| 64	| 3x3	| 64	| 3x3 | comp	576 | activation	576 | 
 | 10	| conv4	| InnerProduct	| 	64	| 3x3	| 128	| 1x1 | macc	73.73k | activation	128<br>param	73.86k | 
 | 11	| prelu4	| PReLU	| 	128	| 1x1	| 128	| 1x1	| comp	128 | activation	128 | 
 | 12	| conv5-2	| InnerProduct	| 	128	| 1x1	| 4	| 1x1 | macc	512 | activation	4<br>param	516 | 
