@@ -37,7 +37,7 @@
 | TOTAL | | | | | | | macc	1.53M<br>comp	55.55k<br>add	2<br>div	2<br>exp	2 | activation	42.18k<br>param	99.91k | 
 
 
-* Proposal Net (P-Net)
+* Output Net (O-Net)
 
 | ID | Name | Type | Input CH | Input DIM | Output CH | Output DIM | OPS | Mem |
 | -- | :--- | :--- | :--- | :--- | :--- |:--- | :--- | :--- | 
@@ -48,7 +48,7 @@
 | 5	| conv2	| Convolution	| 	32	| 23x23	| 64	| 21x21 | macc	8.13M | activation	28.22k<br>param	18.5k | 
 | 6	| relu2	| PReLU	| 	64	| 21x21	| 64	| 21x21	| comp	28.22k | activation	28.22k | 
 | 7	| pool2	| Pooling	| 64	| 21x21	| 64	| 10x10	| comp	57.6k | activation	6.4k
-| 8	| conv3	| Convolution	| 64	| 10x10	| 64	| 8x8	| macc	2.36M | activation	4.1k | param	36.93k | 
+| 8	| conv3	| Convolution	| 64	| 10x10	| 64	| 8x8	| macc	2.36M | activation	4.1k<br>param	36.93k | 
 | 9	| relu3	| PReLU	| 	64	| 8x8	| 64	| 8x8 | comp	4.1k | activation	4.1k | 
 | 10	| pool3	| Pooling		| 64	| 8x8	| 64	| 4x4	| comp	4.1k | activation	1.02k | 
 | 11	| conv4	| Convolution	| 	64	| 4x4	| 128	| 3x3	| macc	294.91k | activation	1.15k<br>param	32.9k | 
