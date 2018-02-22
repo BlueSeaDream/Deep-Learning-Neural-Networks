@@ -15,7 +15,9 @@
 | 11	| prob1	| Softmax		| 2	| 1x1	| 2	| 1x1 | add	2<br>div	2<br>exp	2 | activation	2 |
 | TOTAL | | | | | | |	macc	44.76k<br>comp	2.18k | add	2<br>div	2<br>exp	2 | activation	3.04k<br>param	6.57k |
 
-* Proposal Net (O-Net)
+
+* Refine Net (R-Net)
+
 | ID | Name | Type | Input CH | Input DIM | Output CH | Output DIM | OPS | Mem |
 | -- | :--- | :--- | :--- | :--- | :--- |:--- | :--- | :--- | 
 | 1	| data	| data		| 3	| 24x24	| 3	| 24x24 | activation	1.73k | 
