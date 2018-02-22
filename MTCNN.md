@@ -9,7 +9,7 @@
 | 5	| conv2	| Convolution	| 10	| 5x5	| 16	| 3x3	| macc	12.96k | activation	144<br>param	1.46k | 
 | 6	| PReLU2| 	PReLU	| 	16	| 3x3	| 16	| 3x3	| comp	144 | activation	144
 | 7	| conv3	| Convolution		| 16	| 3x3	| 32	| 1x1	| macc	4.61k | activation	32<br>param	4.64k | 
-| 8	| PReLU3| 	PReLU		| 32	| 1x1	| 32	| 1x1	| comp	32<br>activation	32| 
+| 8	| PReLU3| 	PReLU		| 32	| 1x1	| 32	| 1x1	| comp	32 | activation	32| 
 | 9	| conv4-2	| Convolution	| 	32	| 1x1	| 4	| 1x1 | 	macc	128 | activation	4<br>param	132| 
 | 10	| conv4-1	| Convolution	| 	32	| 1x1	| 2	| 1x1	| macc	64 | activation	2<br>param	66 | 
 | 11	| prob1	| Softmax		| 2	| 1x1	| 2	| 1x1 | add	2<br>div	2<br>exp	2 | activation	2 |
