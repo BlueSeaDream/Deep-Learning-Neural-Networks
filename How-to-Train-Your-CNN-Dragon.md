@@ -1,6 +1,6 @@
 # How to Train Your CNN Dragon
 
-![](D:\Books Papers Learning Materials\CNN\How to Train You CNN Dragon\How-To-Train-A-Dragon-Wallpapers-029.jpg)
+![different learning rate](https://user-images.githubusercontent.com/30903837/46020757-ac0df200-c111-11e8-9a5d-950077eafb3c.png)
 
 
 
