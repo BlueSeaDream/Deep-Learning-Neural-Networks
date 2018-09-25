@@ -1,8 +1,5 @@
 # How to Train Your CNN Dragon
 
-
-# How to Train Your CNN Dragon
-
 ![](D:\Books Papers Learning Materials\CNN\How to Train You CNN Dragon\How-To-Train-A-Dragon-Wallpapers-029.jpg)
 
 
