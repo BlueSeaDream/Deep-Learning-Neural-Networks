@@ -5,6 +5,29 @@
 
 ![how to train your dragon](https://user-images.githubusercontent.com/30903837/46021445-47539700-c113-11e8-8008-434dc0b1fe5f.jpg)
 
+The training of CNN networks are often joked as alchemy. It makes sense in the way of mistry converage 
+
+## Hyperparameters
+
+In CNN network training, Hyperparameters are variables related to network structure and determine the training.
+
+Hyperparameters are the variables which determines the network structure(Eg: Number of Hidden Units) and the variables which determine how the network is trained(Eg: Learning Rate).
+
+Hyperparameters are set before training(before optimizing the weights and bias).
+
+Hyperparameters related to Network structure
+
+- Number of hidden layers and units
+- Dropout
+- Activation function
+
+Hyperparameters related to training
+
+- Learning Rate
+- Momentum
+- Number of epochs
+- Batch size
+
 ## Hyperparameters
 
 Hyperparameters are variables that define the network structure and determine the training.
@@ -15,6 +38,15 @@ Hyperparameters are set before training(before optimizing the weights and bias).
 
 Hyperparameters related to Network structure
 Number of Hidden Layers and units
+Dropout
+Activation function
+
+Hyperparameters related to Training Algorithm
+Learning Rate
+Momentum
+Number of epochs
+Batch size
+
 Hidden layers are the layers between input layer and output layer.
 
 “Very simple. Just keep adding layers until the test error does not improve anymore.”
