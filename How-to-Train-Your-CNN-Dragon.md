@@ -5,9 +5,9 @@
 
 ![how to train your dragon](https://user-images.githubusercontent.com/30903837/46021445-47539700-c113-11e8-8008-434dc0b1fe5f.jpg)
 
-## 1. Hyperparameters in CNN
+## Hyperparameters
 
-Hyperparameters are variables that determines the network structure and training.
+Hyperparameters are variables that define the network structure and determine the training.
 
 Hyperparameters are the variables which determines the network structure(Eg: Number of Hidden Units) and the variables which determine how the network is trained(Eg: Learning Rate).
 
