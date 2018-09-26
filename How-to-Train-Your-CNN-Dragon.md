@@ -1,6 +1,47 @@
+
 # How to Train Your CNN Dragon
 
+### Guo Dong
+
 ![how to train your dragon](https://user-images.githubusercontent.com/30903837/46021445-47539700-c113-11e8-8008-434dc0b1fe5f.jpg)
+
+
+## 1. Hyper Parameter Setting
+
+### 1.1 Learning Rate
+
+**Learning Rate** is an critical hyper-parameter parameter in CNN network trainings, it adjusts the network weight based on training loss gradients. The lower the value, the slower we travel along the downward slope. While this might be a good idea (using a low learning rate) in terms of making sure that we do not miss any local minimum, it could also mean that we’ll be taking a long time to converge — especially if we get stuck on a plateau region.
+
+The following formula shows the relationship.
+
+```
+new_weight = existing_weight — learning_rate * gradient
+```
+
+
+
+Typically learning rates are configured naively at random by the user. At best, the user would leverage on past experiences (or other types of learning material) to gain the intuition on what is the best value to use in setting learning rates.
+
+As such, it’s often hard to get it right. The below diagram demonstrates the different scenarios one can fall into when configuring the learning rate.
+
+
+
+#### 1. Shuffle the dataset
+
+If your dataset hasn't been shuffled and has a particular order to it (ordered by label) this could negatively impact the learning. Shuffle your dataset to avoid this. Make sure you are shuffling input and labels together.
+
+![learning_rate](D:\Books Papers Learning Materials\CNN\How to Train You CNN Dragon\learning_rate.png)
+
+
+
+![dropout](D:\Books Papers Learning Materials\CNN\How to Train You CNN Dragon\dropout.gif)
+
+
+
+
+# How to Train Your CNN Dragon
+
+
 
 ![learning rate](https://user-images.githubusercontent.com/30903837/46021465-50446880-c113-11e8-85ca-5edcdd3cfb8e.png)
 
@@ -115,6 +156,11 @@ https://flyyufelix.github.io/2016/10/03/fine-tuning-in-keras-part1.html
 # Setting the learning rate of your neural network.
 
 https://www.jeremyjordan.me/nn-learning-rate/
+
+
+An Overview of Regularization Techniques in Deep Learning (with Python code)
+
+https://www.analyticsvidhya.com/blog/2018/04/fundamentals-deep-learning-regularization-techniques/
 
 
 
