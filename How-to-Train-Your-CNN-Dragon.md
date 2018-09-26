@@ -224,4 +224,9 @@ An Overview of Regularization Techniques in Deep Learning (with Python code)
 https://www.analyticsvidhya.com/blog/2018/04/fundamentals-deep-learning-regularization-techniques/
 
 
+# What are Hyperparameters ? and How to tune the Hyperparameters in a Deep Neural Network?
+
+https://towardsdatascience.com/what-are-hyperparameters-and-how-to-tune-the-hyperparameters-in-a-deep-neural-network-d0604917584a
+
+
 
