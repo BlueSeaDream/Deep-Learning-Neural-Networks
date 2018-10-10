@@ -287,3 +287,10 @@ lr_mult: 0 # 学习率为0
 }
 }
 
+Caffe学习笔记--如何创建自定义Layer
+
+https://zhuanlan.zhihu.com/p/25484850
+
+/aiml/g00391176/EV200/one_stg_obj_det/caffe/src/caffe/proto/
+
+Note: must erase the original built and rebuild everything from the scratch.
