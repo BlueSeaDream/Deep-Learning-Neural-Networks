@@ -325,28 +325,7 @@ https://blog.csdn.net/wenlin33/article/details/53378613
       type: "constant"
     }
   }
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
+
 还有innerproduct_layer的描述：
 
 layer {
@@ -370,27 +349,7 @@ layer {
     }
   }
 }
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
+
 大家可以看到，这些层都涉及到了层参数初始化的有关设置。而这些都与Caffe中的Filler有关。Fillers是caffe用特定算法随机生成的值来填充网络参数在blob里面的初始值。它只作用在参数的初始化阶段，与gpu无关的操作。下面我们将一一介绍caffe中layer参数初始化的类型及其初始化的方式。 
 这里我们先上proto上关于FillerParameter的数据结构描述，对应的Caffe源码的头文件为filler.hpp。
 
@@ -414,26 +373,7 @@ message FillerParameter {
   }
   optional VarianceNorm variance_norm = 8 [default = FAN_IN];
 }
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
+
 从上面我们可以看到有关的filler参数及其默认值。如默认filler填充类型为constant，value默认值为0，xavier和msra的VarianceNorm类型默认为FAN_IN等等。重点注意下sparse这个参数，它标志着初始化的数据有没有稀疏性。
 
 Constant 
@@ -451,18 +391,18 @@ Uniform
 Xavier（不适用于inner product layers.） 
 作用：默认将Blob系数x初始化为满足x∼U(−a,+a)x∼U(−a,+a)的均匀分布， 其中 aa = sqrt(3 / n)。（不支持sparse） 
 假设输入blob的shape为（num, a, b, c）。对于n的取值，下面分三种情况：
-
 FAN_IN: 默认为这种类型。该类型下，n = a * b * c
 FAN_OUT: n = num * b * c
 AVERAGE: n = ( FAN_IN + FAN_OUT )/2 
 参考paper [Bengio and Glorot 2010]: Understanding the difficulty of training deep feedforward neural networks.
+
 Msra（不适用于inner product layers.） 
 作用：默认将Blob系数x初始化为满足x∼N(0,σ2)x∼N(0,σ2)的高斯分布，其中σσ =sqrt(2 / n)。和Xavier一样，对于n的取值分为三种类型：
-
 FAN_IN: 默认为这种类型。该类型下，n = a * b * c
 FAN_OUT: n = num * b * c
 AVERAGE: n = ( FAN_IN + FAN_OUT )/2 
 参考paper [He, Zhang, Ren and Sun 2015]: Specifically accounts for ReLU nonlinearities.
+
 Bilinear 
 作用：一般用在deconvolution 层做upsampling，例子如下：
 
