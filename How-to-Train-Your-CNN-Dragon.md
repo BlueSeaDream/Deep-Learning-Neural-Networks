@@ -418,5 +418,7 @@ layer {
   param { lr_mult: 0 decay_mult: 0 }
 }
 
+轻量化神经网络综述
+https://cloud.tencent.com/developer/article/1348098
 
 
