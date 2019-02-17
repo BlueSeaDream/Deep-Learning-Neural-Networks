@@ -422,3 +422,7 @@ layer {
 https://cloud.tencent.com/developer/article/1348098
 
 
+5 Regression Loss Functions All machine learner should know
+
+https://heartbeat.fritz.ai/5-regression-loss-functions-all-machine-learners-should-know-4fb140e9d4b0
+
