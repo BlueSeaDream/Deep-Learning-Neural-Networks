@@ -426,3 +426,9 @@ https://cloud.tencent.com/developer/article/1348098
 
 https://heartbeat.fritz.ai/5-regression-loss-functions-all-machine-learners-should-know-4fb140e9d4b0
 
+
+An Overview of Regularization Techniques in Deep Learning (with Python code)
+https://www.analyticsvidhya.com/blog/2018/04/fundamentals-deep-learning-regularization-techniques/
+
+
+
