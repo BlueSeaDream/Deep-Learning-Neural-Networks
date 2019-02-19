@@ -431,4 +431,9 @@ An Overview of Regularization Techniques in Deep Learning (with Python code)
 https://www.analyticsvidhya.com/blog/2018/04/fundamentals-deep-learning-regularization-techniques/
 
 
+正则化方法：L1和L2 regularization、数据集扩增、dropout
+https://blog.csdn.net/u012162613/article/details/44261657
+
+
+
 
