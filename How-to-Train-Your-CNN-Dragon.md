@@ -434,6 +434,16 @@ https://www.analyticsvidhya.com/blog/2018/04/fundamentals-deep-learning-regulari
 正则化方法：L1和L2 regularization、数据集扩增、dropout
 https://blog.csdn.net/u012162613/article/details/44261657
 
+Understanding Learning Rates and How It Improves Performance in Deep Learning
+https://towardsdatascience.com/understanding-learning-rates-and-how-it-improves-performance-in-deep-learning-d0d4059c1c10
+
+Improving the way we work with learning rate
+https://techburst.io/improving-the-way-we-work-with-learning-rate-5e99554f163b
+
+What are Hyperparameters ? and How to tune the Hyperparameters in a Deep Neural Network?
+https://towardsdatascience.com/what-are-hyperparameters-and-how-to-tune-the-hyperparameters-in-a-deep-neural-network-d0604917584a
+
+
 
 
 
